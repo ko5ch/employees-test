@@ -1,0 +1,18 @@
+body {
+/*    padding-top: 70px;
+    padding-bottom: 70px;*/
+}
+.content {
+    /*width: 360px;*/
+}
+.table {
+    border-collapse: collapse;
+    overflow: auto;
+    table-layout: fixed;
+}
+/*.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, */.table>thead>tr>th {
+    vertical-align: bottom !important;
+}
+/*.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td,*/ .table>thead>tr>th {
+    vertical-align: bottom !important;
+}

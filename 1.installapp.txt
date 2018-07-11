@@ -1,0 +1,26 @@
+1.install app
+2.npm install
+3.composer update
+4.create migration (create_employees_table, [create_users_table]) $ php artisan make:migration create_employees_table
+4.1.create seeds 
+5.create model : $ php artisan make:model Employees
+6.create controller : php artisan make:controller App\\Admin\\Http\\Controllers\\DashboardController
+7.php artisan make:auth
+8.fill seeds
+9.create EmployeeRequest:
+  */
+    public function authorize()
+    {
+        return true;
+    }
+    public function rules()
+    {
+        return [
+            'name' => 'required|min:2',
+            'position' => 'required',
+            'salary' => 'required',
+            'parent_id' => 'required',
+            'start_day' => 'required|date',
+//            'photo' => ''
+        ];
+    }
