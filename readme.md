@@ -92,7 +92,7 @@ npm install
 9. Build
 
 ````
-npm run prod
+npm run dev
 ````
 
 
